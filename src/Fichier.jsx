@@ -11,6 +11,8 @@ import s6 from "./assets/mongodb.png";
 import s7 from "./assets/postgresql.png";
 import s8 from "./assets/java.png";
 import s9 from "./assets/git.png";
+import s from "./assets/next.svg";
+import ps from "./assets/postman.svg"
 
 import bg1 from "./assets/cars.png";
 import bg2 from "./assets/lastpr.png";
@@ -25,7 +27,7 @@ import v4 from "./assets/videontwo.mp4";
 import v5 from "./assets/project1.mp4";
 
 
-const img = { s1, s2, s3, s4, s5, s6, s7, s8, s9, bg1, bg2, bg3, bg4, bg5 };
+const img = { s1, s2, s3, s4, s5, s6, s7, s8, s9, s, ps, bg1, bg2, bg3, bg4, bg5 };
 const vid = { v1, v2, v3, v4, v5 };
 
 export default function Portfolio() {
@@ -39,10 +41,12 @@ export default function Portfolio() {
         { id: 3, name: "React", img: img.s3 },
         { id: 4, name: "Node.js", img: img.s4 },
         { id: 5, name: "Tailwind CSS", img: img.s5 },
+        { id: 6, name: "Next.js", img: img.s },
         { id: 6, name: "MongoDB", img: img.s6 },
         { id: 7, name: "PostgreSQL", img: img.s7 },
         { id: 8, name: "Java", img: img.s8 },
         { id: 9, name: "Git", img: img.s9 },
+        { id: 10, name: "Postman", img: img.ps },
     ];
 
 
