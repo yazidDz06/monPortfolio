@@ -293,11 +293,12 @@ export default function Portfolio() {
                     </h3>
                     <p className="text-gray-600 text-sm mb-4 leading-relaxed">{project.description}</p>
                     <div className="flex gap-2 flex-wrap mb-4">
-                      {project.github.map((link, i) => (
-                        <a key={i} href={link} target="_blank" rel="noopener noreferrer" className="bg-gray-100 hover:bg-gray-200 border border-gray-300 hover:border-purple-400 px-3 py-2 rounded-lg flex items-center gap-2 text-sm transition-all font-semibold text-gray-700">
-                          <FaGithub /> Repo {project.github.length > 1 ? i + 1 : ""}
-                        </a>
-                      ))}
+                     {project.github?.map((link, i) => (
+  <a key={i} href={link} target="_blank" rel="noopener noreferrer" className="...">
+    <FaGithub /> Repo {project.github.length > 1 ? i + 1 : ""}
+  </a>
+))}
+
                     </div>
                     <button onClick={() => setPlayingProject(playingProject === idx ? null : idx)} className="bg-gradient-to-r from-purple-600 via-pink-600 to-rose-600 text-white px-4 py-2 rounded-lg flex items-center gap-2 text-sm font-bold hover:scale-105 transition-transform w-full justify-center shadow-md hover:shadow-lg">
                       <FaPlay /> {playingProject === idx ? "Stop" : "Watch"}
