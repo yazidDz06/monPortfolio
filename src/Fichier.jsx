@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaPlay, FaBars, FaTimes, FaEnvelope, FaPhone, FaWhatsapp, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 
@@ -17,14 +17,14 @@ import ps from "./assets/postman.svg";
 import s13 from "./assets/docker.svg";
 import s10 from "./assets/sequelize.svg";
 import s12 from "./assets/prisma.svg";
+import n from "./assets/nest.png"
 import bg1 from "./assets/cars.png";
 import bg2 from "./assets/lastpr.png";
-import bg3 from "./assets/proj3.png";
+import bg3 from "./assets/projet3.png";
 import bg4 from "./assets/coaching.png";
 import bg5 from "./assets/project1.png";
 import v1 from "./assets/rental.mp4";
 import v2 from "./assets/admin.mp4";
-import v3 from "./assets/ecom.mp4";
 import v4 from "./assets/videontwo.mp4";
 import v5 from "./assets/project1.mp4";
 
@@ -68,6 +68,8 @@ export default function Portfolio() {
     { name: "MongoDB", img: s6 },
     { name: "PostgreSQL", img: s7 },
     { name: "Express", img: s11 },
+    { name: "NestJS", img: n },
+
   ];
 
   const orms = [
@@ -97,14 +99,9 @@ export default function Portfolio() {
       video: v2,
     },
     {
-      title: "Ecommerce Website",
-      description: "Minimalist ecommerce platform with all essential functionalities (frontend + backend repos).",
-      github: [
-        "https://github.com/yazidDz06/frontendecommercevercel",
-        "https://github.com/yazidDz06/ecommerce-",
-      ],
+      title: "Watchmaking Website",
+      description: "website who allows to sell his watches so i made for him full ecommerce website with interesting specifications: Admin to manage : brands, products, blogs, courses for learning, videos of restoration, reviews system, sellers that can sell their products with limited option, discount system, integrating third partApi for client support, integrating currency exchange, users can add notes for their orders, view their profiles, making dynamic backgrounds editable by admin panel and more, it was a perfect starting solution for him to register his presence on web.",
       bg: bg3,
-      video: v3,
     },
     {
       title: "Coaching Platform",
